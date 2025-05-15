@@ -1,0 +1,90 @@
+/* src/App.css */
+
+/* src/App.css */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding doesn't affect widths */
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Navbar - fixed 25% */
+.navbar-container {
+  width: 25%;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+/* Main Content - fixed 55% */
+.main-content {
+  width: 55%;
+  flex-shrink: 0;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content wrapper for centering */
+.content-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right Sidebar - fixed 20% */
+.sidebar {
+  width: 20%;
+  min-width: 200px;
+  flex-shrink: 0;
+  background-color: whitesmoke;
+}
+
+/* For pages that need centered content */
+.centered-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Full-screen layout for public pages */
+body, html, #root {
+  height: 100%;
+}
+
+/* App layout (25-55-20) */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar-container {
+  width: 25%;
+  background: whitesmoke;
+}
+
+.main-content {
+  width: 55%;
+  background: white;
+}
+
+.sidebar {
+  width: 20%;
+  background: whitesmoke;
+}

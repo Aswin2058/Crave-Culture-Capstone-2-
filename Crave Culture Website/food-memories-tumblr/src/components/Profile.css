@@ -1,0 +1,220 @@
+/* Profile.css */
+
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-container h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-details p {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.profile-details p strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.edit-btn, .logout-btn, .save-btn, .cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-group input[type="file"] {
+  padding: 0.5rem;
+  background: #f8f9fa;
+}
+
+.picture-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 0.5rem;
+  border: 3px solid #f1f1f1;
+}
+
+.email-display {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #7f8c8d;
+  margin: 0.5rem 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.save-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.save-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancel-btn {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Loading state */
+.profile-container > p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .profile-actions, .form-actions {
+    flex-direction: column;
+  }
+  
+  .edit-btn, .logout-btn, .save-btn, .cancel-btn {
+    width: 100%;
+  }
+}

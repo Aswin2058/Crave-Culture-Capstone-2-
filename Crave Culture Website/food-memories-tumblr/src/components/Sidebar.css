@@ -1,0 +1,35 @@
+/* Sidebar.css */
+.sidebar {
+    padding: 1rem;
+    background-color: #fffaf0;
+    border-right: 1px solid #eee;
+    width: 300px;
+  }
+  
+  .event-card {
+    background-color: #fff4e6;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ffcc99;
+  }
+  
+  .event-card h4 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .event-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .event-form input,
+  .event-form select,
+  .event-form textarea {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

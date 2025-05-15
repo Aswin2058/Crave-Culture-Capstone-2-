@@ -1,0 +1,39 @@
+/* src/components/MainLayout.css */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevents any overflow */
+}
+
+.navbar-column {
+  width: 25%;
+  min-width: 250px;
+  background: whitesmoke;
+  border-right: 1px solid #ddd;
+  overflow-y: auto; /* Scroll only if needed */
+}
+
+.content-column {
+  width: 55%;
+  background: white;
+  overflow-x: hidden; /* No overflow */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-column {
+  width: 20%;
+  min-width: 200px;
+  background: whitesmoke;
+  border-left: 1px solid #ddd;
+  margin-right: 0; /* Ensures it touches right edge */
+  overflow-y: auto;
+}
+
+/* Ensures content fills available space without overflowing */
+.content-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+}

@@ -1,0 +1,37 @@
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+}
+
+.user-avatar {
+  position: relative;
+  margin-right: 12px;
+}
+
+.user-avatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a90e2;
+}
+
+.avatar-fallback {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #4a90e2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.username {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}

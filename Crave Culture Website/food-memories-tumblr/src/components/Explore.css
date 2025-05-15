@@ -1,0 +1,50 @@
+/* Explore Container */
+.explore-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #4a90e2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Posts Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Modern Card Hover Effect */
+.post-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

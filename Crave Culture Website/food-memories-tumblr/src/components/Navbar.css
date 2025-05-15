@@ -1,0 +1,48 @@
+.navbar {
+  width: 25%;
+  min-width: 250px;
+  padding: 2rem 1.5rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5rem; /* Smaller size */
+  font-weight: bold;
+  color: #00b8ff;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 184, 255, 0.3);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.nav-links button {
+  padding: 0.8rem 1.2rem;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-links button:hover {
+  background-color: rgba(0, 184, 255, 0.1);
+  color: #00b8ff;
+}
